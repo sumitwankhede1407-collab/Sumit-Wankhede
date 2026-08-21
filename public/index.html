@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official website of Sumit Wankhede">
+<title>Sumit Wankhede | Official</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="header">
+  <a class="logo" href="#home">SW<span>.</span></a>
+
+  <button class="menu" onclick="toggleMenu()">☰</button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#social">Social</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">WELCOME TO MY OFFICIAL WEBSITE</p>
+
+    <h1>SUMIT<br><span>WANKHEDE.</span></h1>
+
+    <p class="hero-text">
+      Creator • Dreamer • Explorer
+    </p>
+
+    <p class="subtext">
+      This is my digital space where ideas, creativity and my journey come together.
+    </p>
+
+    <div class="buttons">
+      <a href="#about" class="btn primary">Explore More →</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="glow"></div>
+    <div class="sw">SW<span>.</span></div>
+    <div class="card-bottom">
+      <small>SUMIT WANKHEDE</small>
+      <strong>CREATE • INSPIRE • GROW</strong>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="section reveal">
+  <p class="eyebrow">ABOUT ME</p>
+  <h2>Welcome to <span>my world.</span></h2>
+
+  <div class="about-grid">
+    <div>
+      <p>
+        I'm Sumit Wankhede. Welcome to my official website.
+        Here you can discover my work, projects, content and future plans.
+      </p>
+
+      <p>
+        I'm always learning, creating and exploring new ideas.
+        This website will continue to grow along with me.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div>
+        <strong>01</strong>
+        <span>Creative Mind</span>
+      </div>
+
+      <div>
+        <strong>∞</strong>
+        <span>Big Ideas</span>
+      </div>
+
+      <div>
+        <strong>24/7</strong>
+        <span>Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="section reveal">
+  <p class="eyebrow">MY WORLD</p>
+  <h2>Things I <span>do.</span></h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="card-icon">🚀</div>
+      <h3>Projects</h3>
+      <p>
+        Personal projects, experiments and things I'm building.
+      </p>
+      <a href="#contact">View More →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">▶️</div>
+      <h3>Content</h3>
+      <p>
+        Digital content, videos and creative work.
+      </p>
+      <a href="#social">Follow →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">💡</div>
+      <h3>Ideas</h3>
+      <p>
+        New ideas, creativity and future plans.
+      </p>
+      <a href="#contact">Connect →</a>
+    </article>
+
+  </div>
+</section>
+
+
+<section id="social" class="section social-section reveal">
+  <p class="eyebrow">CONNECT WITH ME</p>
+  <h2>Find me <span>online.</span></h2>
+
+  <div class="social-grid">
+
+    <a class="social youtube" href="#" onclick="socialAlert('YouTube')">
+      <span>▶</span>
+      <div>
+        <strong>YouTube</strong>
+        <small>Watch my videos</small>
+      </div>
+      <b>→</b>
+    </a>
+
+    <a class="social instagram" href="#" onclick="socialAlert('Instagram')">
+      <span>◎</span>
+      <div>
+        <strong>Instagram</strong>
+        <small>Follow my journey</small>
+      </div>
+      <b>→</b>
+    </a>
+
+    <a class="social telegram" href="#" onclick="socialAlert('Telegram')">
+      <span>➤</span>
+      <div>
+        <strong>Telegram</strong>
+        <small>Join the community</small>
+      </div>
+      <b>→</b>
+    </a>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contact reveal">
+  <p class="eyebrow">GET IN TOUCH</p>
+  <h2>Let's <span>connect.</span></h2>
+
+  <p>
+    Have an idea, project or just want to say hello?
+  </p>
+
+  <div class="contact-buttons">
+    <button class="btn primary" onclick="hello()">Say Hello 👋</button>
+    <a class="btn secondary" href="mailto:contact@example.com">Email Me ✉️</a>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="footer-logo">SW<span>.</span></div>
+  <p>SUMIT WANKHEDE</p>
+  <small>© <span id="year"></span> All Rights Reserved.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
