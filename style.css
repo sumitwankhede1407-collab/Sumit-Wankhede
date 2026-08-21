@@ -474,3 +474,36 @@ nav a:hover {
   }
 }
 
+
+/* ===== MOBILE NAVIGATION SCROLL FIX ===== */
+
+@media (max-width: 800px) {
+
+  nav,
+  .nav-links,
+  .navbar,
+  .nav-menu {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar,
+  .nav-links::-webkit-scrollbar,
+  .navbar::-webkit-scrollbar,
+  .nav-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a,
+  .nav-links a,
+  .navbar a,
+  .nav-menu a {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+}
+
