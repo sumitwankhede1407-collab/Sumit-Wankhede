@@ -1301,3 +1301,56 @@ footer {
 
 }
 
+
+/* ===== FINAL IMAGE FIX ===== */
+
+/* Black Diary Project */
+#projects .project-photo {
+  width: 100% !important;
+  max-width: 420px !important;
+  height: auto !important;
+  margin: 25px auto !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+}
+
+#projects .project-photo img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+}
+
+/* ABHI AI */
+.abhi-photo {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
+.abhi-photo-image {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 360px !important;
+  max-height: none !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+}
+
+@media (max-width: 750px) {
+
+  #projects .project-photo {
+    max-width: 320px !important;
+  }
+
+  .abhi-photo-image {
+    max-width: 300px !important;
+  }
+
+}
+
