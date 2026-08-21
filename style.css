@@ -407,3 +407,70 @@ nav a:hover {
   color: #7f8b98 !important;
 }
 
+
+/* ===== CONTACT ===== */
+
+.contact-grid {
+  max-width: 850px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  text-decoration: none;
+  border: 1px solid rgba(0,229,255,.14);
+  border-radius: 18px;
+  background: linear-gradient(145deg,#111923,#090e14);
+  transition: .3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,229,255,.5);
+  box-shadow: 0 15px 35px rgba(0,229,255,.08);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: #00e5ff;
+  border: 1px solid rgba(0,229,255,.25);
+  background: rgba(0,229,255,.06);
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.contact-card small {
+  display: block;
+  margin-bottom: 5px;
+  color: #00e5ff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.contact-card strong {
+  display: block;
+  color: #dce4ec;
+  font-size: 13px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+@media (max-width: 650px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
