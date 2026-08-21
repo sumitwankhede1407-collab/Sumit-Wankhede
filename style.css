@@ -1237,3 +1237,67 @@ footer {
   transform: scale(1.02);
 }
 
+
+/* ===== FINAL NORMAL PROJECT IMAGE ===== */
+
+.project-photo {
+  width: 100%;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #090e14;
+  border: 1px solid rgba(0,229,255,.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,.22);
+}
+
+.project-photo img {
+  width: 100%;
+  height: auto;
+  max-height: 430px;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  transform: none !important;
+}
+
+
+/* ===== FINAL NORMAL ABHI AI IMAGE ===== */
+
+.abhi-photo {
+  min-height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abhi-photo-image {
+  width: 100%;
+  height: auto !important;
+  max-height: 380px;
+  display: block;
+  object-fit: contain !important;
+  border-radius: 18px;
+  border: 1px solid rgba(0,229,255,.2);
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+@media (max-width: 750px) {
+
+  .project-photo {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .project-photo img {
+    max-height: 360px;
+  }
+
+  .abhi-photo-image {
+    max-height: 360px;
+  }
+
+}
+
