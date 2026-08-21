@@ -1012,3 +1012,45 @@ footer {
   }
 }
 
+
+/* ===== LANGUAGES ===== */
+
+.languages-section {
+  text-align: center;
+}
+
+.languages-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.language-card {
+  min-width: 150px;
+  padding: 18px 25px;
+  border: 1px solid rgba(0,229,255,.15);
+  border-radius: 16px;
+  background: linear-gradient(145deg,#111923,#090e14);
+  color: #00e5ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  transition: .3s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,229,255,.5);
+  box-shadow: 0 10px 30px rgba(0,229,255,.08);
+}
+
+.language-card span {
+  display: block;
+  margin-top: 4px;
+  color: #8d98a6;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
