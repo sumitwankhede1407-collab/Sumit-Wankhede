@@ -655,3 +655,163 @@ nav a:hover {
   text-shadow: 0 0 10px rgba(0,229,255,.25);
 }
 
+
+/* ===== FINAL PROFESSIONAL POLISH ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  letter-spacing: .1px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  letter-spacing: -.3px;
+}
+
+.section {
+  max-width: 1150px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+/* Clean section headings */
+
+.section > .tag,
+.premium-heading span {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.section > h2,
+.premium-heading h2 {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+/* Professional cards */
+
+.education-card,
+.project-card,
+.certificate-card,
+.contact-card,
+.abhi-card {
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.education-card:hover,
+.project-card:hover,
+.certificate-card:hover,
+.contact-card:hover,
+.abhi-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Better links */
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better buttons */
+
+.btn {
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    background .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Certifications */
+
+.certifications-section {
+  overflow: hidden;
+}
+
+.certificate-card {
+  min-height: 105px;
+  box-sizing: border-box;
+}
+
+.certificate-card h3 {
+  font-size: 17px;
+}
+
+.certificate-card a {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* Contact */
+
+.contact-section {
+  overflow: hidden;
+}
+
+.contact-grid {
+  max-width: 900px;
+}
+
+.contact-card {
+  box-sizing: border-box;
+}
+
+/* ABHI AI */
+
+.abhi-built {
+  border-left: 2px solid rgba(0,229,255,.35);
+  padding-left: 10px;
+}
+
+/* Mobile polish */
+
+@media (max-width: 800px) {
+
+  .section {
+    width: 100%;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .certificate-card,
+  .contact-card {
+    width: 100%;
+  }
+
+  .certificate-card {
+    padding: 18px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .certificate-card {
+    gap: 14px;
+  }
+
+  .certificate-icon {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+
+}
+
