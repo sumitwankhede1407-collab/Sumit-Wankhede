@@ -1,33 +1,33 @@
-function toggleMenu() {
-  document.getElementById("nav").classList.toggle("active");
-}
+const sections = document.querySelectorAll(".section");
 
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById("nav").classList.remove("active");
-  });
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+sections.forEach((section) => {
+  section.style.opacity = "0";
+  section.style.transform = "translateY(30px)";
+  section.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+  observer.observe(section);
 });
 
-function hello() {
-  alert("Hey! 👋 Welcome to Sumit Wankhede's official website!");
-}
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
 
-function socialAlert(platform) {
-  alert(platform + " link will be added soon!");
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   });
-}, {
-  threshold: 0.12
 });
-
-document.querySelectorAll(".reveal").forEach(element => {
-  observer.observe(element);
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
