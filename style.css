@@ -373,3 +373,37 @@ nav a:hover {
   color: #00e5ff !important;
 }
 
+
+/* ===== LANGUAGES BULLET STYLE ===== */
+
+.language-card {
+  position: relative;
+  padding: 14px 20px 14px 32px !important;
+  min-width: 150px;
+  text-align: left;
+  color: #d5dde6 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.language-card::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  color: #00e5ff;
+  font-size: 24px;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(0,229,255,.4);
+}
+
+.language-card:hover {
+  color: #00e5ff !important;
+  transform: translateX(5px);
+}
+
+.language-card span {
+  color: #7f8b98 !important;
+}
+
