@@ -343,3 +343,33 @@ nav a:hover {
   }
 }
 
+
+/* ===== EDUCATION LOGO HIGHLIGHT ===== */
+
+.education-logo {
+  border: 2px solid rgba(0,229,255,.45) !important;
+  box-shadow:
+    0 0 20px rgba(0,229,255,.15),
+    inset 0 0 18px rgba(0,229,255,.05) !important;
+  transition: .3s ease;
+}
+
+.education-logo:hover {
+  border-color: #00e5ff !important;
+  box-shadow:
+    0 0 30px rgba(0,229,255,.35),
+    inset 0 0 20px rgba(0,229,255,.08) !important;
+  transform: translateY(-3px);
+}
+
+.education-logo .logo-text {
+  color: #00e5ff !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 800 !important;
+  text-shadow: 0 0 15px rgba(0,229,255,.35);
+}
+
+.education-logo .sppu-logo {
+  color: #00e5ff !important;
+}
+
