@@ -1354,3 +1354,68 @@ footer {
 
 }
 
+
+/* ===== DEFINITIVE IMAGE SIZE FIX ===== */
+
+/* BLACK DIARY */
+.project-photo {
+  width: 100% !important;
+  max-width: 400px !important;
+  height: auto !important;
+  margin: 25px auto !important;
+  padding: 8px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.project-photo img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 400px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+
+/* ABHI AI */
+.abhi-photo {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+
+.abhi-photo-image {
+  width: 100% !important;
+  max-width: 330px !important;
+  height: auto !important;
+  max-height: 420px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+
+/* PHONE */
+@media (max-width: 750px) {
+
+  .project-photo {
+    max-width: 320px !important;
+  }
+
+  .project-photo img {
+    max-height: 350px !important;
+  }
+
+  .abhi-photo-image {
+    max-width: 280px !important;
+    max-height: 380px !important;
+  }
+
+}
+
