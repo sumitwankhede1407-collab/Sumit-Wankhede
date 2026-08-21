@@ -815,3 +815,10 @@ a {
 
 }
 
+
+.education-logo-img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+}
