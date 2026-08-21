@@ -290,3 +290,56 @@ nav a:hover {
   }
 }
 
+
+/* ===== PROFESSIONAL SKILL LIST ===== */
+
+.skill-cloud {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 35px !important;
+}
+
+.skill-cloud div {
+  position: relative;
+  padding: 10px 0 10px 22px !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #d5dde6 !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px !important;
+  font-weight: 500;
+  transition: .25s ease;
+}
+
+.skill-cloud div::before {
+  content: "•" !important;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  color: #00e5ff !important;
+  font-size: 22px !important;
+  line-height: 1;
+  margin: 0 !important;
+}
+
+.skill-cloud div:hover {
+  color: #00e5ff !important;
+  transform: translateX(5px);
+  box-shadow: none !important;
+}
+
+.skill-group h3 {
+  color: #ffffff !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px !important;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 600px) {
+  .skill-cloud {
+    grid-template-columns: 1fr;
+    gap: 5px !important;
+  }
+}
+
