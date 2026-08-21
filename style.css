@@ -507,3 +507,67 @@ nav a:hover {
 
 }
 
+
+/* ===== SEPARATE PROFESSIONAL SECTIONS ===== */
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+  margin: 0 !important;
+  scroll-margin-top: 85px;
+}
+
+.section + .section {
+  border-top: 1px solid rgba(0,229,255,.08);
+}
+
+/* ===== NAVIGATION ===== */
+
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.navbar nav a {
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 800px) {
+
+  .navbar {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    padding: 14px 18px !important;
+    gap: 12px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px 16px !important;
+    overflow: visible !important;
+  }
+
+  .navbar nav a {
+    font-size: 12px !important;
+  }
+
+  .section {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    scroll-margin-top: 120px;
+  }
+
+}
+
