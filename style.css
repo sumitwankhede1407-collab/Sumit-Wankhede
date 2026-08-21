@@ -1054,3 +1054,141 @@ footer {
   font-weight: 400;
 }
 
+
+
+/* ===== ABHI AI ===== */
+
+.abhi-section {
+  position: relative;
+}
+
+.abhi-section .premium-heading p {
+  color: #00e5ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+.abhi-card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  padding: 38px;
+  background: linear-gradient(145deg,#121a24,#080c12);
+  border: 1px solid rgba(0,229,255,.16);
+  border-radius: 26px;
+  box-shadow: 0 20px 55px rgba(0,0,0,.3);
+}
+
+.abhi-photo {
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abhi-photo-placeholder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  border: 1px dashed rgba(0,229,255,.35);
+  background: radial-gradient(
+    circle,
+    rgba(0,229,255,.09),
+    rgba(0,229,255,.015)
+  );
+  color: #00e5ff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.abhi-photo-placeholder span {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.abhi-photo-placeholder small {
+  margin-top: 8px;
+  color: #65717e;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.abhi-content h3 {
+  margin: 15px 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(25px,4vw,36px);
+  color: #00e5ff;
+}
+
+.abhi-content p {
+  margin-bottom: 13px;
+  color: #9ba6b3;
+  font-size: 14px;
+}
+
+.abhi-content strong {
+  color: #e7edf3;
+}
+
+.abhi-badge {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: rgba(0,229,255,.08);
+  border: 1px solid rgba(0,229,255,.2);
+  color: #00e5ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.abhi-roadmap {
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.abhi-roadmap h4 {
+  margin-bottom: 14px;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+.roadmap-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.roadmap-tags span {
+  padding: 7px 11px;
+  border-radius: 8px;
+  color: #aab4c0;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.07);
+  font-size: 10px;
+}
+
+@media (max-width: 750px) {
+
+  .abhi-card {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .abhi-photo {
+    min-height: 220px;
+  }
+
+  .abhi-photo-placeholder {
+    height: 220px;
+  }
+
+}
+
