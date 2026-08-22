@@ -947,3 +947,11 @@ a {
   }
 }
 
+
+/* SCM Pro role - dark and readable */
+.scm-project-header .project-role {
+  color: #222 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
