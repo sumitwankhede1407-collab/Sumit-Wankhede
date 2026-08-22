@@ -931,3 +931,19 @@ a {
   }
 }
 
+
+/* SCM Pro subtitle - high contrast */
+.scm-project-header .scm-subtitle {
+  color: #111 !important;
+  font-weight: 800 !important;
+  font-size: 1.45rem !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+@media (max-width: 600px) {
+  .scm-project-header .scm-subtitle {
+    font-size: 1.2rem !important;
+  }
+}
+
