@@ -955,3 +955,27 @@ a {
   opacity: 1 !important;
 }
 
+
+/* SCM Pro subtitle - spaced white title */
+.scm-project-header .scm-subtitle {
+  display: inline-block;
+  margin-top: 12px !important;
+  margin-bottom: 16px !important;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #111 !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .scm-project-header .scm-subtitle {
+    margin-top: 10px !important;
+    margin-bottom: 14px !important;
+    padding: 7px 12px;
+    font-size: 1.1rem !important;
+  }
+}
+
