@@ -993,3 +993,24 @@ a {
   line-height: 1.5;
 }
 
+
+/* FINAL SCM PRO SUBTITLE OVERRIDE */
+.scm-project-header h3.scm-subtitle {
+  display: inline-block !important;
+  background-color: #111 !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+  margin-top: 12px !important;
+  margin-bottom: 16px !important;
+  padding: 9px 17px !important;
+  border-radius: 10px !important;
+  text-shadow: none !important;
+  letter-spacing: 0.4px !important;
+}
+
+.scm-project-header h3.scm-subtitle::before,
+.scm-project-header h3.scm-subtitle::after {
+  color: #fff !important;
+}
+
