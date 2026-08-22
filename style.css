@@ -879,3 +879,55 @@ a {
   }
 }
 
+
+/* =========================
+   SCM PRO - CLEAN SEPARATION
+   ========================= */
+
+.scm-project-header {
+  margin-top: 55px;
+  padding: 28px 0 22px;
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.scm-project-header .tag {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.scm-main-title {
+  font-size: 2.35rem !important;
+  line-height: 1.15;
+  margin: 0 0 6px !important;
+  font-weight: 800 !important;
+  color: #111 !important;
+}
+
+.scm-subtitle {
+  font-size: 1.35rem !important;
+  margin: 0 0 8px !important;
+  font-weight: 700 !important;
+  color: #222 !important;
+}
+
+.scm-project-header .project-role {
+  margin: 0;
+  font-weight: 600;
+  color: #444 !important;
+}
+
+@media (max-width: 600px) {
+  .scm-project-header {
+    margin-top: 40px;
+    padding-top: 22px;
+  }
+
+  .scm-main-title {
+    font-size: 1.9rem !important;
+  }
+
+  .scm-subtitle {
+    font-size: 1.15rem !important;
+  }
+}
+
