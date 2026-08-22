@@ -979,3 +979,17 @@ a {
   }
 }
 
+
+/* SCM Pro role - strong dark text */
+.scm-project-header .project-role {
+  display: block !important;
+  margin: 10px 0 18px !important;
+  padding-left: 14px;
+  border-left: 4px solid #111;
+  color: #111 !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+  font-size: 1rem !important;
+  line-height: 1.5;
+}
+
