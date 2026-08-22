@@ -822,3 +822,34 @@ a {
   object-fit: contain;
   display: block;
 }
+
+
+/* SCM Pro Dashboard Preview - Dark & Bold */
+#scm-dashboard,
+#scm-dashboard h3,
+#scm-dashboard p,
+#scm-dashboard b,
+#scm-dashboard div {
+  color: #111 !important;
+}
+
+#scm-dashboard h3 {
+  color: #000 !important;
+  font-weight: 800 !important;
+}
+
+#scm-dashboard b {
+  color: #000 !important;
+  font-weight: 900 !important;
+}
+
+#scm-dashboard > div > div {
+  color: #111 !important;
+  font-weight: 700 !important;
+}
+
+#scm-dashboard > div > div b {
+  color: #000 !important;
+  font-size: 1.25rem;
+  font-weight: 900 !important;
+}
